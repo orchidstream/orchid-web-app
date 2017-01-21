@@ -1,5 +1,15 @@
 {
+  "plugins": [
+    "transform-class-properties"
+  ],
   "presets": [
     ["es2015", { "modules": false }],
-  ]
+    "react"
+  ],
+  "env": {
+    "development": {
+      "presets": [
+      ]
+    }
+  }
 }
