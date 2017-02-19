@@ -76,7 +76,7 @@ export default class VideoViewer extends Component {
     ws.onopen = () => {
       console.log('ws opened');
       let options = {
-        localVideo: document.getElementById("video-viewer"),
+        remoteVideo: document.getElementById("video-viewer"),
         onicecandidate: onIceCandidate
       };
       console.log('cls:', KurentoUtils);

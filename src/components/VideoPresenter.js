@@ -65,7 +65,7 @@ export default class VideoViewer extends Component {
     function presenterResponse(message) {
       if (message.response !== 'accepted') {
         let errorMsg = message.message ? message.message : 'Unknow error';
-        console.warn('Call not accepted for the following reason: ' + errorMsg);
+        console.warn('Call not accepted for the following reason: ' + JSON.stringify(errorMsg));
         dispose();
       } else {
         webRtcPeer.processAnswer(message.sdpAnswer);
